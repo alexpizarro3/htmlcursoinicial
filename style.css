@@ -1,0 +1,87 @@
+html{ /*cambia la fuente de todo el html desde google fonts*/
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth; /*Tipo de scroll smooth para todos los  links que te lleven*/
+}
+
+body{ /*reseteamos la clase de body*/
+    margin: 0;
+    background-color: azure;
+}
+
+header{ /*Aplica estilo al bloque header*/
+    background-color: firebrick;
+    color: white;
+    padding: 3rem 2rem; /*REM es relativo de acuerdo al tamano del texto del header*/
+    
+}
+
+header a{ /*Da formato al link de contacto*/
+    text-decoration: none; /*Quita las decoraciones*/
+    color: white;
+    float: right; /*Flota el texto a la derecha*/
+}
+
+header:hover{ /*Aplica efecto al header de seleccion*/
+    box-shadow: 0 0.1rem 0.1rem blueviolet;
+}
+
+header h1{ /*Da estilo al H1 del header*/
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container{ /*Da estilo a todo el Section que contiene los articles del blog*/
+    width: 300px;
+    margin: 0 auto; /*centra todo el section del blog*/
+}
+
+section article{ /*Da estilo a los articles del section del blog*/
+    transition: all 0.1s ease; /*Da efecto de transicion*/
+    background-color: khaki;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer; /*agrega la mano de puntero al cursor*/
+}
+
+section article h2, section article p{ /*Da estilo a los h2 y p's de los articles*/
+    margin: 1rem;
+}
+
+section article:hover{ /*Aplica efecto a los articles de seleccion*/
+    box-shadow: 0 0.2rem 0.3rem tomato;
+}
+
+footer{
+    background-color: firebrick;
+    padding: 3rem;
+    color: white;
+}
+
+footer section{ /*al section del footer se pone a flotar a la derecha*/
+    float: right;   
+}
+
+footer a{
+    padding-left: 2rem; /*Da espacio entre los links*/
+    transition: color 0.3s ease; /*Crea una transicion de color de 0.3s para la propiedad de color en el hover*/
+    color: white;
+    text-decoration: none; /*Quita el color al ya ser selecionado el link*/
+}
+
+footer a:hover{ /*Color cuando se pasa el mouse por encima del link*/
+    color: rgb(76, 189, 165);
+}
+
+footer a:active{ /*Color cuando el link es clickeado*/
+    color: gold;
+}
+
+footer p{ /*Alinea el parrafo a los href*/
+    color: white;
+    margin: 0;
+}
+
+section img{ /*Bordea las imagenes*/
+    border-radius: 10px;
+}
